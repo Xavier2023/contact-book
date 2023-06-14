@@ -33,17 +33,7 @@ const AuthState = props => {
 
         try {
             const res = await axios.get('/api/auth');
-            dispatch({
-                type: USER_LOADED,
-                payload: res.data
-            })
-        } catch (err) {
-            dispatch({
-                type: AUTH_ERROR
-            })
-            
-        }
-    }
+
 
 
     // Register User
@@ -62,12 +52,11 @@ const AuthState = props => {
                 payload: res.data
             })
 
-            loadUser();
         } catch (err) {
             dispatch({
                 type: REGISTER_FAIL,
                 payload: err.response.data.msg
-            })
+            });
         }
     }
 
