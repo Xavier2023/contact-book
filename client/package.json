@@ -39,5 +39,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://xavier2023-automatic-winner-px7v7qxpw5299r4-5000.preview.app.github.dev"
+  "proxy": "http://localhost:5000"
 }
